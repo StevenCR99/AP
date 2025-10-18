@@ -38,3 +38,13 @@ namespace AgendaPro
             return $"{PersonaId} | {Fecha:dd/MM/yyyy HH:mm} | {Descripcion}";
         }
     }
+    class Program
+    {
+        static List<Persona> personas = new List<Persona>();
+        static List<Cita> citas = new List<Cita>();
+        static void Main(string[] args
+            {
+
+        }
+
+    }

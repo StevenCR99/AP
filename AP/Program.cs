@@ -21,3 +21,20 @@ namespace AgendaPro
             return $"{Id} - {Nombre} - {Telefono}";
         }
     }
+    class Cita
+    {
+        public int PersonaId { get; set; }
+        public DateTime Fecha { get; set; }
+        public string Descripcion { get; set; }
+
+        public Cita(int personaId, DateTime fecha, string descripcion)
+        {
+            PersonaId = personaId; 
+            Fecha = fecha; 
+            Descripcion = descripcion;
+        }
+        public override string ToString()
+        {
+            return $"{PersonaId} | {Fecha:dd/MM/yyyy HH:mm} | {Descripcion}";
+        }
+    }
